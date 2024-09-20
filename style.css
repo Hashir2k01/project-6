@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ubuntu, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.first-section {
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/263361/images/silhouettes-business-team5.jpg);
+    background-size: cover;   
+    background-color: gray;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-blend-mode: darken; 
+    height: 100vh;
+    color: white;
+    text-align: start;
+}
+
+.overlay-text {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+.first-section p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+button {
+    background-color: yellow;
+    margin: 40px auto;
+    padding: 15px 50px;
+    font-weight: 600;
+    border: none;
+    display: block;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.second-section {
+    background-color: #fff;
+    padding: 100px 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.text-div {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+    order: 1;
+}
+
+.round {
+    background-image: url(https://www.contemporist.com/wp-content/uploads/2016/09/hidden-room_27096_01-800x533.jpg);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+    flex-shrink: 0; 
+    order: 2; 
+}
+.round:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.text-h1 {
+    font-size: 70px;
+    color: red;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.text {
+    font-weight: 100;
+    line-height: 2.0;
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+
+.button-two {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 40px auto;
+    padding: 15px 50px;
+    font-weight: 600;
+    border: none;
+    display: block;
+}
+
+.button-two:hover {
+    background-color: #b10202;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.third-section {
+    padding: 80px 20%;
+    background-image: url(https://www.shutterstock.com/image-photo/blurred-soft-people-meeting-table-600nw-714357475.jpg);
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.third-section h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.card-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-row: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.card-grid {
+    background-color: #F7EB2F;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-grid:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.card-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width: 1024px) { 
+    .second-section {
+        padding: 80px 10%;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text-div {
+        max-width: 100%; 
+        margin-right: 0; 
+        text-align: center; 
+    }
+
+    .round {
+        width: 300px; 
+        height: 300px;
+        margin-top: 20px; 
+    }
+
+    .text-h1 {
+        font-size: 60px; 
+    }
+}
+
+@media (max-width: 768px) { 
+    .first-section {
+        height: auto; 
+        padding: 50px 10%;
+    }
+
+    .first-section p {
+        font-size: 24px; 
+    }
+
+    .button-two {
+        padding: 10px 30px; 
+    }
+
+    .third-section {
+        padding: 60px 10%; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .first-section {
+        padding: 20px; 
+    }
+
+    .text-h1 {
+        font-size: 40px; 
+    }
+
+    .text {
+        font-size: 14px; 
+    }
+
+    .button-two {
+        padding: 10px 20px; 
+    }
+
+    .round {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .card-grid {
+        padding: 20px; 
+    }
+}
